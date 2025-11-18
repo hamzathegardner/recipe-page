@@ -1,0 +1,113 @@
+/* Josh W Comeau's CSS Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  /* line-height: 1.5; */
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Custom Styles */
+
+/* Global Variables */
+html {
+  /* Colors */
+  --color-stone-100: hsl(30, 54%, 90%);
+  --color-stone-150: hsl(30, 18%, 87%);
+  --color-stone-600: hsl(30, 10%, 34%);
+  --color-stone-900: hsl(24, 5%, 18%);
+  --color-brown-800: hsl(14, 45%, 36%);
+  --color-rose-800: hsl(332, 51%, 32%);
+  --color-rose-50: hsl(330, 100%, 98%);
+
+  /* Fonts */
+  --font-1-size: 40px;
+  --font-1-line-height: 100%;
+  --font-1-letter-spacing: 0px;
+
+  --font-2-size: 28px;
+  --font-2-line-height: 100%;
+  --font-2-letter-spacing: 0px;
+
+  --font-3-size: 20px;
+  --font-3-line-height: 100%;
+  --font-3-letter-spacing: 0px;
+
+  --font-4-size: 16px;
+  --font-4-line-height: 150%;
+  --font-4-letter-spacing: 0px;
+}
+
+/* Global paragraph size */
+p {
+  font-size: 16px;
+}
