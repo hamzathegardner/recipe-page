@@ -107,7 +107,112 @@ html {
   --font-4-letter-spacing: 0px;
 }
 
-/* Global paragraph size */
-p {
-  font-size: 16px;
+html {
+  background-color: var(--color-stone-100);
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 736px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 32px;
+}
+
+img {
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+main {
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+/* Fonts */
+.title {
+  font-size: var(--font-1-size);
+  line-height: var(--font-1-line-height);
+  letter-spacing: var(--font-1-letter-spacing);
+  margin-bottom: 24px;
+  color: var(--color-stone-900);
+  font-size: var(--font-1-size);
+  letter-spacing: var(--font-1-letter-spacing);
+  line-height: var(--font-1-line-height);
+}
+
+figcaption p {
+  color: var(--color-stone-600);
+}
+
+aside {
+  padding: 24px;
+  background-color: var(--color-rose-50);
+  color: var(--);
+  border-radius: 12px;
+}
+aside > h3,
+aside li {
+  color: var(--color-rose-800);
+}
+
+aside > h3 {
+  margin-bottom: 16px;
+}
+
+aside li {
+  margin-bottom: 8px;
+}
+aside li:last-child {
+  margin-bottom: 0px;
+}
+aside span {
+  color: var(--color-stone-600);
+}
+
+hr {
+  background-color: var(--color-stone-150);
+  border: none;
+  border-bottom: 1px solid;
+}
+
+section li::marker,
+section h2 {
+  color: var(--color-brown-800);
+}
+
+.instructions li::marker {
+  font-weight: bold;
+}
+
+.ingredients li,
+.instructions li {
+  margin-bottom: 8px;
+}
+
+.ingredients li:last-child,
+.instructions li:last-child {
+  margin-bottom: 0px;
+}
+
+section h2 {
+  margin-bottom: 24px;
+}
+
+.nutrition > p {
+  margin-bottom: 24px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  width: 100%;
+  border-bottom: 1px solid var(--color-stone-150);
 }
