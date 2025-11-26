@@ -135,6 +135,7 @@ main {
 
 /* Fonts */
 .title {
+  color: var(--color-stone-900);
   font-size: var(--font-1-size);
   line-height: var(--font-1-line-height);
   letter-spacing: var(--font-1-letter-spacing);
@@ -152,12 +153,15 @@ figcaption p {
 aside {
   padding: 24px;
   background-color: var(--color-rose-50);
-  color: var(--);
   border-radius: 12px;
 }
 aside > h3,
 aside li {
   color: var(--color-rose-800);
+}
+
+.emph {
+  font-weight: bold;
 }
 
 aside > h3 {
@@ -192,6 +196,7 @@ section h2 {
 .ingredients li,
 .instructions li {
   margin-bottom: 8px;
+  color: var(--color-stone-600);
 }
 
 .ingredients li:last-child,
@@ -205,6 +210,7 @@ section h2 {
 
 .nutrition > p {
   margin-bottom: 24px;
+  color: var(--color-stone-600);
 }
 
 table {
@@ -223,4 +229,28 @@ li {
 ul,
 ol {
   padding-inline-start: 15px;
+}
+
+table {
+  text-align: left;
+}
+th {
+  padding-left: 32px;
+  width: 288px;
+  font-weight: normal;
+  color: var(--color-stone-600);
+}
+
+td {
+  padding-right: 32px;
+  width: 288px;
+  color: var(--color-brown-800);
+  font-weight: bold;
+}
+
+tr:not(:first-of-type) th {
+  padding-top: 12px;
+}
+tr:not(:last-of-type) th {
+  padding-bottom: 12px;
 }
