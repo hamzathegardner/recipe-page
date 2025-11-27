@@ -109,6 +109,8 @@ html {
 
 html {
   background-color: var(--color-stone-100);
+  font-family: "Outfit", sans-serif;
+  line-height: var(--font-4-line-height);
 }
 
 .wrapper {
@@ -136,6 +138,7 @@ main {
 /* Fonts */
 .title {
   color: var(--color-stone-900);
+  font-family: "Young Serif", serif;
   font-size: var(--font-1-size);
   line-height: var(--font-1-line-height);
   letter-spacing: var(--font-1-letter-spacing);
@@ -206,6 +209,7 @@ section h2 {
 
 section h2 {
   margin-bottom: 24px;
+  font-family: "Young Serif", serif;
 }
 
 .nutrition > p {
